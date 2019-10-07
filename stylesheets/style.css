@@ -624,6 +624,7 @@ ______ ____   ____ _______ ______ _____
 .panel-doc-main-subtext{
   line-height: 30px;
   margin-top: 20px;
+  padding: 0 20%;
 }
 
 .panel-doc-contribute{
@@ -645,4 +646,10 @@ ______ ____   ____ _______ ______ _____
 
 .panel-doc-margin-bottom{
   margin-bottom: 50px;
+}
+
+@media (max-width:576px){
+  .panel-doc-main-subtext{
+    padding: unset;
+  }
 }
