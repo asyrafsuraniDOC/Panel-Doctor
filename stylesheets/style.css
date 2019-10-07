@@ -40,14 +40,10 @@ body{
     background-repeat: no-repeat;
     background-size: 100% 100%;
     color: #fff;
+    opacity: 0.88;
     text-align: center;
     padding: 50px;
     width: 100%;
-}
-
-.partnership-main-title{
-  font-size: 24px;
-  font-weight: bold;
 }
 
 .partnership-main-desc-text{
@@ -58,13 +54,18 @@ body{
 }
 
 .partnership-get-touch-button{
-    background: #41C0F1;
-    border:none;
-    border-radius: 5px;
-    color: #fff;
-    height: 40px;
-    margin-top: 25px;
-    width: max-content;      
+  background: #41C0F1;
+  border:none;
+  border-radius: 5px;
+  color: #fff;    
+  display: inline-block;
+  height: 40px;
+  margin-top: 25px;    
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  width: max-content;  
+  
 }
 
 .partnership-doctor-image{
@@ -615,11 +616,6 @@ ______ ____   ____ _______ ______ _____
   color: #fff;
   padding: 50px;
   text-align: center;
-}
-
-.panel-doc-main-title{
-  font-size: 24px;
-  font-weight: bold;
 }
 
 .panel-doc-main-subtext{
