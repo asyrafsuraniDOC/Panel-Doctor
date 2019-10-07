@@ -625,3 +625,24 @@ ______ ____   ____ _______ ______ _____
   line-height: 30px;
   margin-top: 20px;
 }
+
+.panel-doc-contribute{
+  font-weight: bold;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.panel-doc-contribute-img{
+  height: 130px;
+    width: 130px;
+}
+
+.panel-doc-position{
+  text-align: center;
+  width: 50%;
+}  
+
+.panel-doc-margin-bottom{
+  margin-bottom: 50px;
+}
