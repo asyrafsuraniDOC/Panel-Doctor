@@ -71,7 +71,8 @@ body{
 .partnership-doctor-image{
     background-image: url('../images/doctoroncall-partnership-doctor.png');   
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: right;
     height: 590px;
     width: 100%;
 }
@@ -92,10 +93,6 @@ body{
 }
 
 @media (max-width:768px){
-  .partnership-doctor-image{
-    height: 365px;
-  }
-
   .partnership-main-desc-text{
       padding-left: 12%;
       padding-right: 12%;
@@ -119,8 +116,9 @@ body{
     }
 
     .partnership-doctor-image{
-        background-image: url('../images/doctoroncall-partnership-doctor-mobile.png');
-        height: 216px;
+        /* background-image: url('../images/doctoroncall-partnership-doctor-mobile.png'); */        
+        background-position: top;
+        height: 285px;
     }
 
     .partnership-button-position{
@@ -637,12 +635,23 @@ ______ ____   ____ _______ ______ _____
 }
 
 .panel-doc-position{
+  margin-bottom: 50px;
   text-align: center;
   width: 50%;
 }  
 
 .panel-doc-margin-bottom{
   margin-bottom: 50px;
+}
+
+.panel-doctor-contribute-desc{
+  color: #3C3C3C;
+  font-size: 13px;
+}
+
+.panel-doctor-contribute-name{
+  color: #3C3C3C;
+  margin: 5px 0;
 }
 
 @media (max-width:576px){
