@@ -7,6 +7,32 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="./stylesheets/bootstrap-grid.min.css">
         <link rel="stylesheet" type="text/css" href="./stylesheets/style.css">
+
+        <script>
+            function redirectSignUp(){
+            window.location.href= window.location.origin+"/patient#/signin?callback="+window.location.href;
+            }
+            function checkLogin(){  
+              var user=JSON.parse(window.localStorage.getItem("userDetails"))
+              
+              if(user){   
+                document.getElementById("header-login-signup").style.display="none";
+                document.getElementById("header-login-account").style.display="inline-block";
+                document.getElementById("header-login-account").style.visibility="visible";
+                document.getElementById("header-login-signup-mobile").style.display="none"; 
+                document.getElementById("header-login-account-mobile").style.display="inline-block";
+              }else{ 
+                document.getElementById("header-login-signup").style.display="inline-block";
+                document.getElementById("header-login-account").style.display="none";
+                document.getElementById("header-login-signup-mobile").style.display="inline-block";
+                document.getElementById("header-login-account-mobile").style.display="none";
+              }
+            }
+            // Add event listener
+            document.addEventListener('DOMContentLoaded', function () { 
+              try{checkLogin()}catch(e){console.log(e.message)}
+            }); 
+          </script> 
     </head>
 
     <body>
