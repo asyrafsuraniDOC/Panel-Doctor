@@ -82,7 +82,15 @@ body{
 }
 
 .partnership-desc-text{
-    line-height: 30px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.partnership-partner-desc-text{
+  color: #3c3c3c;
+  font-size: 14px;
+  font-weight: normal;
+  margin-top: 10px;
 }
 
 .partnership-desc-text-column{
@@ -90,6 +98,25 @@ body{
     padding-left: 10%;
     padding-right: 5%;
     width: 60%;
+}
+
+.partnership-display-flex{
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.partnership-image-logo-position{
+  text-align: center;
+  width: 50%;
+}
+
+.partnership-image-logo{
+  height: 62px;
+}
+
+.who-we-partner-style{  
+  list-style-type: none;
+  padding-left: 15px;
 }
 
 @media (max-width:768px){
@@ -610,8 +637,13 @@ ______ ____   ____ _______ ______ _____
 /* 4. Panel Doctor CSS */
 
 .panel-doc-main-section{
-  background: #2E5AA9;
-  color: #fff;
+  background-blend-mode: soft-light;
+  background-color: #2E5AA9;
+  background-image: url('../images/doctoroncall-panel-doctor-main.png');   
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: #fff;  
+  opacity: 0.88;
   padding: 50px;
   text-align: center;
 }
