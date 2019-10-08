@@ -38,7 +38,8 @@ body{
     background-color: #2E5AA9;
     background-image: url('../images/doctoroncall-partnership-main.png');   
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
     color: #fff;
     opacity: 0.88;
     text-align: center;
@@ -641,7 +642,8 @@ ______ ____   ____ _______ ______ _____
   background-color: #2E5AA9;
   background-image: url('../images/doctoroncall-panel-doctor-main.png');   
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: left;
   color: #fff;  
   opacity: 0.88;
   padding: 50px;
