@@ -20,6 +20,10 @@ body{
     display: none;
 }
 
+.h2-margin{
+  margin: 30px 0;
+}
+
 @media (max-width:576px){
   .desktop-only{
       display: none;
@@ -117,7 +121,8 @@ body{
 
 .who-we-partner-style{  
   list-style-type: none;
-  padding-left: 15px;
+  margin-bottom: 40px;
+  padding-left: 0;
 }
 
 @media (max-width:768px){
