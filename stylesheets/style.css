@@ -53,7 +53,6 @@ body{
 
 .partnership-main-desc-text{
     line-height: 30px;
-    margin-top: 25px;
     padding-left: 30%;
     padding-right: 30%;
 }
@@ -86,6 +85,10 @@ body{
     width: 40%;
 }
 
+.partnership-making-sure-text{
+  line-height: 1.7em;
+}
+
 .partnership-desc-text{
     font-weight: bold;
     padding-left: 20px;
@@ -100,7 +103,7 @@ body{
 
 .partnership-desc-text-column{
     margin-bottom: 5%;
-    padding-left: 10%;
+    padding-left: 13.5%;
     padding-right: 5%;
     width: 60%;
 }
@@ -125,7 +128,26 @@ body{
   padding-left: 0;
 }
 
+.partnership-why-us-position{
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.partnership-why-us-position img{
+  height: 142px;
+}
+
+.partnership-why-us-text{
+  color: #3c3c3c;
+  font-size: 13px;
+}
+
 @media (max-width:768px){
+
+  .partnership-desc-text-column{
+    padding-left: 5%;
+  }
+
   .partnership-main-desc-text{
       padding-left: 12%;
       padding-right: 12%;
@@ -164,14 +186,7 @@ body{
 
 }
 
-/* 2.0 Header */
-
-.doc-header-logo svg
-{
-    height: 75px;
-    margin: 5px 0 0 15px;
-    padding: 10px;
-}
+/2.0 Header/
 
 .header-user-link{
   display: inline-block;
@@ -188,13 +203,72 @@ body{
   width: 45px;
 }
 
+/Scrollbar/
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #888; 
+}
+
+
+
+/Horizontal scrollers/
+.scroller::-webkit-scrollbar-track
+{
+	border-radius: 4px;
+	background-color: transparent;
+}
+
+.scroller::-webkit-scrollbar
+{
+	width: 4px;
+  height: 8px;
+	background-color: transparent;
+}
+
+.scroller::-webkit-scrollbar-thumb
+{
+	border-radius: 4px;
+	background-color: rgba(119, 118, 118, 0.2);
+}
+.scroller{
+  overflow: auto;
+  white-space: nowrap;
+}
+@media(max-width:768px)
+{
+  .scroller{
+    width:105%;
+  }
+} 
+
+
+
 /*
-_    _ ______          _____  ______ _____
-| |  | |  ____|   /\   |  __ \|  ____|  __ \
-| |__| | |__     /  \  | |  | | |__  | |__) |
-|  __  |  __|   / /\ \ | |  | |  __| |  _  /
-| |  | | |____ / ____ \| |__| | |____| | \ \
-|_|  |_|______/_/    \_\_____/|______|_|  \_\
+_    _ __          __  ___ ___
+| |  | |  _|   /\   |  _ \|  _|  _ \
+| |_| | |_     /  \  | |  | | |_  | |_) |
+|  _  |  _|   / /\ \ | |  | |  __| |  _  /
+| |  | | |__ / __ \| |_| | |_| | \ \
+||  ||__//    \\__/|__||  \_\
  */
  
 /* 2. header */
@@ -227,7 +301,7 @@ _    _ ______          _____  ______ _____
 }
 
 @media (max-width: 960px) {
-  .header-link {
+  .header-link, .header-link:hover, .header-link:active, .header-link:visited, .header-link:checked {
     color: #000;
     padding: 20px 0 20px 20px;
     text-decoration: none;
@@ -266,6 +340,12 @@ _    _ ______          _____  ______ _____
 .header-menu-div,.header-menu-div-signup{
   border-bottom:3px solid transparent;
   display: inline-block;
+}
+
+@media(max-width:960px){
+  .header-menu-div-signup{
+    display: none;
+  }
 }
 
 
@@ -435,7 +515,7 @@ _    _ ______          _____  ______ _____
 
 @media (max-width: 960px) {
   .header-more-content,.header-dropdown-content{
-      height:calc(58px * 9); /*TODO Make this auto*/
+      height:calc(58px * 9); /TODO Make this auto/
       width:100%;
   }
   .header-dropdown-content a {
