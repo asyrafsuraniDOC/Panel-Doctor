@@ -186,7 +186,7 @@ body{
 
 }
 
-/2.0 Header/
+/*2.0 Header*/
 
 .header-user-link{
   display: inline-block;
@@ -202,64 +202,6 @@ body{
   visibility: hidden;
   width: 45px;
 }
-
-/Scrollbar/
-
-::-webkit-scrollbar {
-  width: 5px;
-  height: 8px;
-  background-color: transparent;
-}
-
-::-webkit-scrollbar-track {
-  background: #fff; 
-}
-
-::-webkit-scrollbar-thumb {
-  background: #ccc;
-  border-radius: 4px; 
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #aaa;
-}
-
-::-webkit-scrollbar-thumb:active {
-  background: #888; 
-}
-
-
-
-/Horizontal scrollers/
-.scroller::-webkit-scrollbar-track
-{
-	border-radius: 4px;
-	background-color: transparent;
-}
-
-.scroller::-webkit-scrollbar
-{
-	width: 4px;
-  height: 8px;
-	background-color: transparent;
-}
-
-.scroller::-webkit-scrollbar-thumb
-{
-	border-radius: 4px;
-	background-color: rgba(119, 118, 118, 0.2);
-}
-.scroller{
-  overflow: auto;
-  white-space: nowrap;
-}
-@media(max-width:768px)
-{
-  .scroller{
-    width:105%;
-  }
-} 
-
 
 
 /*
@@ -277,6 +219,8 @@ _    _ __          __  ___ ___
   background-color: #fff;
   box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.1);
   padding-left:0;
+  position: sticky;
+  top: 0;
   width: 100%;
   z-index: 3;
 }
@@ -428,8 +372,9 @@ _    _ __          __  ___ ___
 }
 
 .header .header-menu-btn:checked~.header-menu {
-  height:auto;
-  transition: all 10s;
+  height:100vh;
+  overflow: scroll;
+  transition: all 0.5s;
 }
 
 .header .header-menu-btn:checked~.header-menu-icon .navicon {
